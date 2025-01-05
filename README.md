@@ -4,6 +4,26 @@
 
 This repository aims to showcase advanced reports built using SQL. The analyses provided here can be applied to businesses of all sizes that aspire to become more data-driven. These reports will help organizations extract valuable insights from their data, aiding in strategic decision-making.
 
+## Context
+
+The `Northwind` database contains sales data for a company called `Northwind Traders`, which imports and exports specialty foods worldwide.
+
+The Northwind database is an ERP system with data on customers, orders, inventory, purchases, suppliers, shipping, employees, and accounting.
+
+The Northwind dataset includes sample data for:
+
+* **Suppliers:** Vendors of Northwind
+* **Customers:** Buyers of Northwind's products
+* **Employees:** Details about Northwind Traders' staff
+* **Products:** Product information
+* **Shippers:** Details of transporters delivering goods
+* **Orders and Order Details:** Sales transactions between customers and the company
+
+The database includes 14 tables, with relationships shown in the following entity-relationship diagram:
+
+![northwind](https://github.com/lvgalvao/Northwind-SQL-Analytics/blob/main/pics/northwind-er-diagram.png?raw=true)
+
+
 ## Reports to Create
 
 1. **Revenue Reports**
@@ -160,25 +180,6 @@ This repository aims to showcase advanced reports built using SQL. The analyses 
     GROUP BY customers.contact_name
     HAVING SUM(order_details.unit_price * order_details.quantity * (1.0 - order_details.discount)) > 1000;
     ```
-
-## Context
-
-The `Northwind` database contains sales data for a company called `Northwind Traders`, which imports and exports specialty foods worldwide.
-
-The Northwind database is an ERP system with data on customers, orders, inventory, purchases, suppliers, shipping, employees, and accounting.
-
-The Northwind dataset includes sample data for:
-
-* **Suppliers:** Vendors of Northwind
-* **Customers:** Buyers of Northwind's products
-* **Employees:** Details about Northwind Traders' staff
-* **Products:** Product information
-* **Shippers:** Details of transporters delivering goods
-* **Orders and Order Details:** Sales transactions between customers and the company
-
-The database includes 14 tables, with relationships shown in the following entity-relationship diagram:
-
-![northwind](https://github.com/lvgalvao/Northwind-SQL-Analytics/blob/main/pics/northwind-er-diagram.png?raw=true)
 
 
 ## Initial Setup
